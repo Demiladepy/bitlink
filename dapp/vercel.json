@@ -1,17 +1,9 @@
 {
     "build": {
       "env": {
-        "BUILD_STANDALONE": "true",
-        "NEXT_PUBLIC_IGNORE_BUILD_COMMAND": "true",
         "VERCEL_FORCE_NO_BUILD_CACHE": "1"
       }
     },
-    "crons": [
-      {
-        "path": "/api/cron",
-        "schedule": "0 0 * * *"
-      }
-    ],
     "installCommand": "pnpm install",
     "buildCommand": "pnpm build",
     "devCommand": "pnpm dev",

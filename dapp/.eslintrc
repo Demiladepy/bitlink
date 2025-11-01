@@ -1,18 +1,24 @@
 {
   "root": true,
-  "extends": ["@thesis-co"],
-  "plugins": ["react", "simple-import-sort"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "simple-import-sort"],
   "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"],
-        "extensions": [".js", ".jsx", ".ts", ".d.ts", ".tsx"]
-      },
-      "typescript": {
-        "project": "./tsconfig.json"
-      }
-    },
-    "sort-imports": ["error", { "allowSeparatedGroups": false }]
+    "react": {
+      "version": "detect"
+    }
   },
   "rules": {
     "simple-import-sort/imports": "error",
@@ -31,8 +37,7 @@
       }
     ],
     "react/react-in-jsx-scope": [0],
-    // Some of dev dependencies are being forced, to be included as 'dependencies'
-    // instead of 'devDependencies'
+    // Disable import/no-extraneous-dependencies for build compatibility
     "import/no-extraneous-dependencies": "off"
   },
   "overrides": [
