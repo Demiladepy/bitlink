@@ -38,7 +38,6 @@
   "devDependencies": {
     "@testing-library/react": "^14.1.2",
     "@thesis-co/eslint-config": "^0.6.1",
-    "@thesis/prettier-config": "github:thesis/prettier-config",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.43",
