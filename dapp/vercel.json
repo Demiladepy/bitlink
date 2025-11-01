@@ -6,11 +6,6 @@
         "VERCEL_FORCE_NO_BUILD_CACHE": "1"
       }
     },
-    "functions": {
-      "api/**/*.ts": {
-        "runtime": "nodejs20"
-      }
-    },
     "crons": [
       {
         "path": "/api/cron",
