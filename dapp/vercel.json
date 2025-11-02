@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "VERCEL_FORCE_NO_BUILD_CACHE": "1"
+      }
+    },
+    "installCommand": "pnpm install --no-frozen-lockfile",
+    "buildCommand": "pnpm build",
+    "devCommand": "pnpm dev",
+    "outputDirectory": "dist"
+  }
