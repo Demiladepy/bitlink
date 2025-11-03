@@ -1,59 +1,119 @@
-# MUSD
+# 💳 Bitlink – Decentralized Stablecoin Banking Platform
 
-Smart contracts and the dApp powering MUSD on Mezo.
+**Bitlink is a next-generation DeFi payment system that bridges the gap between stablecoin finance and real-world usability**.
+It enables users to send, receive, borrow, and spend Bitcoin-backed MUSD through an intuitive dashboard and virtual Visa card, making decentralized banking accessible to everyone.
 
-## Development
+# Overview
 
-Developer documentation can be found in the [docs](docs) directory. Particularly, the [README](docs/README.md), which contains a system overview and breakdown of the main contracts.
+**Bitlink transforms DeFi into a simple, secure, and practical experience for everyday users and institutions alike**
 
-### Installation
+# 🌐 Core Features
 
-This project uses [pnpm](https://pnpm.io/) as a package manager ([installation documentation](https://pnpm.io/installation)).
+Dashboard: Total balance, transactions, quick actions, and portfolio analytics.
 
-To install dependencies run:
+Send / Receive MUSD: Seamless transfers with QR and address options.
 
-```bash
-pnpm install --frozen-lockfile
-cd solidity
-pnpm install --frozen-lockfile
-```
+Virtual Visa Card: Spend stablecoins anywhere — online or offline.
 
-### Running Tests
+Borrow MUSD (Open Trove): Deposit BTC as collateral to mint MUSD.
 
-To run tests:
+Manage Collateral: Add or withdraw BTC, view liquidation risk.
 
-```bash
-cd solidity
-pnpm test
-```
+Earn with Stability Pool: Deposit MUSD and earn from liquidations.
 
-### Deployment
+Swap Tokens: Convert MUSD to BTC or other supported assets.
 
-1. `$ cd solidity`
-1. `$ cp .env.example .env` and fill in the values.
-1. `$ pnpm run deploy --network matsnet` to deploy the contracts. This will resolve and use the current deployment at `deployments/matsnet`, so if you want to deploy a fresh set of contracts, delete (or archive) the `deployments/matsnet` directory.
+Analytics Dashboard: Track portfolio performance, earnings, and liquidation gains.
 
-### Pre-commit hooks
+# How It Works
 
-Setup [pre-commit](https://pre-commit.com/) hooks to automatically discover code issues before submitting the code.
+Bitlink leverages DeFi protocols and stablecoin infrastructure to make decentralized finance practical:
 
-1. Install `pre-commit` tool:
-   ```bash
-   brew install pre-commit
-   ```
-2. Install the pre-commit hooks in the current repository:
-   ```bash
-   pre-commit install
-   ```
+Users interact with MUSD, a Bitcoin-backed stablecoin.
 
-#### Testing pre-commit hooks
+In the backend, MUSD is converted to USDC for real-world payments.
 
-To test configuration or debug problems hooks can be invoked manually:
+Virtual cards (powered by Stripe / Flutterwave APIs) enable instant online and offline transactions.
 
-```bash
-# Execute hooks for all files:
-pre-commit run --all-files
+The system integrates smart contracts (Solidity) and blockchain APIs (Alchemy / Infura) for transparency and automation.
 
-# Execute hooks for specific files:
-pre-commit run --files <path-to-file>
-```
+#  Tech Stack
+Layer	Technology
+Frontend	React.js
+Database / Auth	Firebase
+Smart Contracts	Solidity
+Blockchain Access	Alchemy / Infura
+
+# ⚙️ Installation & Setup
+
+You can use pnpm, npm, or yarn — whichever you prefer.
+
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/bitlink.git
+cd bitlink
+
+2️⃣ Install Dependencies
+Using pnpm
+pnpm install
+
+Using npm
+npm install
+
+Using yarn
+yarn install
+
+4️⃣ Run the Development Server
+pnpm
+pnpm dev
+
+npm
+npm run dev
+
+yarn
+yarn dev
+
+
+Then visit http://localhost:5173
+ to access the app.
+
+# 🧪 Development Process
+
+Frontend Development:
+Built with React + Tailwind CSS for a fast, responsive, and modular UI.
+
+Backend Development:
+Managed with Node.js / Express — handles transactions, user data, and DeFi integrations.
+
+Smart Contracts:
+Written in Solidity, deployed on a compatible blockchain layer for MUSD operations.
+
+Testing & Deployment:
+
+Unit tests for components and contracts.
+
+Continuous integration with GitHub Actions.
+
+Deployment to Vercel / Netlify for frontend and Firebase Functions for backend.
+
+# 🔒 Security & Transparency
+
+Smart contracts are open-source and verifiable.
+
+User keys are never stored — all wallet operations are signed client-side.
+
+MUSD is pegged 1:1 with USDC in the backend for payment stability.
+
+# 🌍 Roadmap
+
+Milestone	Description	ETA
+1️⃣ Mainnet Beta	Launch of dashboard, send/receive, and card integration	Q1 2026
+2️⃣ Institutional Onboarding	Introduce business accounts & bulk payments	Q2 2026
+3️⃣ Mobile App Launch	Native Android/iOS app release	Q3 2026
+
+# 👥 Contributors
+Ahmed Makinde 
+Ayeku Demilade
+
+Demilade Ayeku – Project Lead & Fullstack Developer
+
+Team Bitlink – Smart Contract, UI/UX, and DeFi Operations
