@@ -114,6 +114,4 @@ Milestone	Description	ETA
 Ahmed Makinde 
 Ayeku Demilade
 
-Demilade Ayeku – Project Lead & Fullstack Developer
-
 Team Bitlink – Smart Contract, UI/UX, and DeFi Operations
